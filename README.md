@@ -3,7 +3,7 @@
 You'll need to build a simple database system using files. That your database is using files underneath should be COMPLETELY hidden to your user. This is the database interface that we need:
 
 ```python
-import pyp_database
+import pyp_database  # This is what you have to build
 from datetime import date
 
 pyp_database.create_database('imdb')
