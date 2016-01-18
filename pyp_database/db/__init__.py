@@ -1,1 +1,1 @@
-from db import Database
+from pyp_database.db.db import Database

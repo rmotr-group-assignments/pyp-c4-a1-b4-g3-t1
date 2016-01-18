@@ -1,4 +1,4 @@
-from .db import Database
+import pyp_database.db as db
 import os
 import pickle
 
@@ -6,7 +6,7 @@ def create_database(name):
     pass
 
 def use(name):
-    pass
+    return db.Database()
 
 def save_database(db_name, file_name):
     pass

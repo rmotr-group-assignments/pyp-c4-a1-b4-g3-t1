@@ -1,1 +1,1 @@
-from table import Table
+from pyp_database.table.table import Table
