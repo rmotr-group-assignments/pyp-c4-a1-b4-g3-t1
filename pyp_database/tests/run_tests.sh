@@ -1,1 +1,1 @@
-python -m unittest discover
+PYTHONPATH=. python -m unittest discover
