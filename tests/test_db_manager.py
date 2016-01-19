@@ -1,4 +1,4 @@
-from pyp_database import db_manager
+import pyp_database
 import unittest
 
 class TestDBManager(unittest.TestCase):
@@ -6,7 +6,7 @@ class TestDBManager(unittest.TestCase):
         db_name = 'test-db'
         pyp_database.create_database(db_name)
         db = pyp_database.use(db_name)
-        self.assertTrue(db.name, '')
+        self.assertEquals(db.name, '')
 
 if __name__ == '__main__':
     unittest.main()

@@ -61,3 +61,4 @@ target/
 *.swo
 tmp*
 cleanup.sh
+venv/
