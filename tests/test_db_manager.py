@@ -6,7 +6,7 @@ class TestDBManager(unittest.TestCase):
         db_name = 'test-db'
         pyp_database.create_database(db_name)
         db = pyp_database.use(db_name)
-        self.assertEquals(db.name, '')
+        self.assertEquals(db.name, db_name)
 
 if __name__ == '__main__':
     unittest.main()
