@@ -1,5 +1,6 @@
-import unittest
+from datetime import date
 import pyp_database.table
+import unittest
 
 class TestDatabaseTables(unittest.TestCase):
     def test_insert_and_query(self):
