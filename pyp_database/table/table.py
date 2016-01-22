@@ -25,7 +25,10 @@ class Table:
     def query(self, **kwargs):
         column_ids = [self.columns.index(key) for key in kwargs.keys()[1:]]
         init_col_name, init_col_val = kwargs.items()[0]
-        qry = self.__get(init_col_name, init_col_val)
+        try:
+            qry = self.__get(init_col_name, init_col_val)
+        except:
+            return []
 
         # filter out the query based on the rest of the kwargs
         filter_kwargs = kwargs.items()[1:]
